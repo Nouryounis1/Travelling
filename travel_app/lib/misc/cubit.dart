@@ -12,7 +12,7 @@ class MyBlocObserver extends BlocObserver {
     super.onChange(bloc, change);
     print('onChange -- ${bloc.runtimeType}, $change');
   }
-
+ 
   @override
   void onError(BlocBase bloc, Object error, StackTrace stackTrace) {
     print('onError -- ${bloc.runtimeType}, $error');
